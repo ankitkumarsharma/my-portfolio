@@ -1,17 +1,19 @@
 <div class="container">
   <div class="row">
-    <div class="col-3">
-      <div class="card m-3">
-        <a href="http://portfolio.ankitkumarsharma.com/angular/angular-dynamic-forms">
-          Angular Dynamic Forms
-        </a>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="card m-3">
-        <a href="http://portfolio.ankitkumarsharma.com/angular/reactive-form-crud">
-          Reactive Form CRUD
-        </a>
+    <div class="col-12">
+      <app-contact />
+      <div class="row">
+        @for (item of portfolioList; track $index) {
+          <div class="col-3">
+            <div class="card m-3">
+              <a target="_blank" [href]="item.url">
+                {{item.label}}
+              </a>
+            </div>
+          </div>
+        } @empty {
+          {{noDataFound}}
+        }
       </div>
     </div>
   </div>
