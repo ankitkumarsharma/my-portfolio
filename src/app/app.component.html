@@ -3,17 +3,37 @@
     <div class="col-12">
       <app-contact />
       <div class="row">
-        @for (item of portfolioList; track $index) {
-          <div class="col-3">
-            <div class="card m-3">
-              <a target="_blank" [href]="item.url">
-                {{item.label}}
-              </a>
+        <div class="col">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            @for (item of tabBlock.tabs; track item.title; let i=$index;) {
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" (click)="onTab(i)" [ngClass]="{'active': item.active}" id="home-tab"
+                type="button">{{item.title}}</button>
+            </li>
+            }
+          </ul>
+          <div class="tab-content p-3">
+            @for (item of tabBlock.tabContent; track item.active; let i=$index;) {
+            <div class="tab-pane fade" [ngClass]="{'show active': item.active}">
+              <div class="row">
+                @for (content of item.content; track $index) {
+                <div class="col-3">
+                  <div class="card m-3">
+                    <a target="_blank" [href]="content.url">
+                      {{content.label}}
+                    </a>
+                  </div>
+                </div>
+                } @empty {
+                {{noDataFound}}
+                }
+              </div>
             </div>
+            }@empty {
+            {{noDataFound}}
+            }
           </div>
-        } @empty {
-          {{noDataFound}}
-        }
+        </div>
       </div>
     </div>
   </div>

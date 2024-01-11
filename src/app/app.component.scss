@@ -1,7 +1,23 @@
-.card{
-    a{
+@import './scss/variable';
+
+.card {
+    a {
         font-size: 16px;
         font-weight: 600;
         text-decoration: none;
+    }
+}
+
+.nav-tabs {
+    .nav-link {
+        min-width: 130px;
+        font-size: 16px;
+        padding: 10px;
+        border-bottom: 0px;
+        font-weight: 500;
+        &.active {
+            border-color: $primaryColor;
+            color: $primaryColor;
+        }
     }
 }
