@@ -17,11 +17,15 @@ export const LABELS = {
 
 export const PORTFOLIO_LIST: PortfolioModel[] = [
     {
-        label:'Angular Dynamic Forms',
+        label:'Dynamic Forms',
         url:`${LABELS.portfolioPrefix}${LABELS.angular}/angular-dynamic-forms`
     },
     {
         label:'Reactive Form CRUD',
         url:`${LABELS.portfolioPrefix}${LABELS.angular}/reactive-form-crud`
+    },
+    {
+        label:'Component Interactions',
+        url:`${LABELS.portfolioPrefix}${LABELS.angular}/component-interaction`
     }
 ]
