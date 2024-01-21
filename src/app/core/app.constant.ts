@@ -27,6 +27,14 @@ export const PORTFOLIO_LIST: PortfolioModel[] = [
     {
         label: 'Component Interactions',
         url: `${LABELS.portfolioPrefix}${LABELS.angular}/component-interaction`
+    },
+    {
+        label: 'NgRx',
+        url: `${LABELS.portfolioPrefix}${LABELS.angular}/ngrx`
+    },
+    {
+        label: 'NgRx',
+        url: `${LABELS.portfolioPrefix}${LABELS.angular}/spinner`
     }
 ]
 
