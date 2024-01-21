@@ -10,7 +10,8 @@ export interface RouteModel {
 
 export interface PortfolioModel {
     label: string,
-    url: string
+    url: string,
+    info: string
 }
 
 export interface TabBlockModel {
