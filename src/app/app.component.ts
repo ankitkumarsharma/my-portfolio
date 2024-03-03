@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { LABELS, TAB_BLOCK } from './core/app.constant';
+import { TabBlockModel } from './core/app.models';
 import { ContactComponent } from "./shared/contact/contact.component";
-import { PortfolioModel, TabBlockModel } from './core/app.models';
-import { LABELS, PORTFOLIO_LIST, TAB_BLOCK } from './core/app.constant';
 
 @Component({
   selector: 'app-root',

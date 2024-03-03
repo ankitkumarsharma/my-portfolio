@@ -15,7 +15,7 @@ export const LABELS = {
 
 
 
-export const PORTFOLIO_LIST: PortfolioModel[] = [
+export const ANGULAR_EXP_PORTFOLIO_LIST: PortfolioModel[] = [
     {
         label: 'Forms',
         url: `${LABELS.portfolioPrefix}${LABELS.angular}/forms`,
@@ -58,6 +58,19 @@ export const PORTFOLIO_LIST: PortfolioModel[] = [
     }
 ]
 
+export const REACT_EXP_PORTFOLIO_LIST: PortfolioModel[] = [
+    {
+        label: 'Basic Learning',
+        url: `${LABELS.portfolioPrefix}${LABELS.react}/basic`,
+        info: 'There are basic learning example of React JS'
+    },
+    {
+        label: 'Search Filter Table',
+        url: `${LABELS.portfolioPrefix}${LABELS.react}/filter-search`,
+        info: 'How we can filter table data in easy way'
+    }
+]
+
 export const TAB_BLOCK: TabBlockModel = {
     tabs: [
         {
@@ -66,25 +79,17 @@ export const TAB_BLOCK: TabBlockModel = {
         },
         {
             active: false,
-            title: 'React'
-        },
-        {
-            active: false,
-            title: 'Java Script'
+            title: 'React Examples'
         }
     ],
     tabContent: [
         {
             active: true,
-            content: PORTFOLIO_LIST
+            content: ANGULAR_EXP_PORTFOLIO_LIST
         },
         {
             active: false,
-            content: []
-        },
-        {
-            active: false,
-            content: []
+            content: REACT_EXP_PORTFOLIO_LIST
         }
     ]
 }
