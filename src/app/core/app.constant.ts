@@ -68,6 +68,11 @@ export const REACT_EXP_PORTFOLIO_LIST: PortfolioModel[] = [
         label: 'Search Filter Table',
         url: `${LABELS.portfolioPrefix}${LABELS.react}/filter-search`,
         info: 'How we can filter table data in easy way'
+    },
+    {
+        label: 'Image Slider',
+        url: `${LABELS.portfolioPrefix}${LABELS.react}/slider`,
+        info: 'A Simple image slider'
     }
 ]
 
