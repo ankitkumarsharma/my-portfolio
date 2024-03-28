@@ -73,6 +73,11 @@ export const REACT_EXP_PORTFOLIO_LIST: PortfolioModel[] = [
         label: 'Image Slider',
         url: `${LABELS.portfolioPrefix}${LABELS.react}/slider`,
         info: 'A Simple image slider'
+    },
+    {
+        label: 'CRUD Form',
+        url: `${LABELS.portfolioPrefix}${LABELS.react}/crud`,
+        info: 'A Simple CRUD with table data with Validation'
     }
 ]
 
